@@ -245,7 +245,7 @@ span {
     padding: 0 50px;
   }
 
-  ul {
+  .header-ul {
       flex-direction: column;
   }
 
