@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css?family=Charmonman|EB+Garamond');
+
+/*   Global Styling    */
+h2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    color:rgb(31,30,25);
+}
+
+/*   Navigation Bar   */
+
+header {
+  font-family: 'Charmonman', cursive;
+  position: fixed;
+  top: 0;
+  min-height: 75px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+}
+
+.logo {
+  width: 60vw;
+}
+
+#header-img {
+    width: 100%;
+    height: 100%;
+    max-width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 20px;
+}
+
+nav li{
+  font-weight: 400;
+
+  }
+
+li {
+    list-style: none;
+    padding-right:10px;
+    margin-right: 10px;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+
+}
+
+.header-ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/*  Contents  */
+
+.container{
+  font-family: 'EB Garamond', sans-serif;
+    padding-top: 100px;
+}
+
+/*  About the shop  */
+.big-box {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom:50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+#shop{
+    background-color:rgb(113,100,64);
+}
+
+.small-box{
+  width:50%;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 20px;
+  color: white;
+}
+
+/*  Virtual tour */
+
+#tour {
+    background-color: rgb(146,83,39);
+
+}
+
+
+/*  Featured Wands  */
+
+.wands {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  margin-top:50;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  height: auto;
+  background-color: rgb(151,162,146);
+}
+
+.wand {
+    width: 30%;
+    max-width: 300px;
+    padding: 5px 5px 5px 5px;
+    margin: 20px 5px 20px 5px;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 3px rgb(31,30,25) solid;
+    height: 200px;
+    background-color: white;
+}
+
+.wand-image{
+    width:80px;
+    height: 80px;
+    border-radius:50%;
+    border: 1px rgb(170,136,88) solid;
+}
+
+
+/*  Subscribe  */
+
+#subscribe {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 200px;
+  margin-top: 50px;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+#email{
+    height: 20px;
+    width: 400px;
+    margin-bottom: 20px;
+}
+
+#submit{
+  padding: 0 20px;
+  height: 40px;
+  font-size: 1em;
+  font-weight: 900;
+  text-transform: uppercase;
+  border: 3px rgb(31,30,25) solid;
+  border-radius: 2px;
+  background: transparent;
+  cursor: pointer;
+}
+
+#submit:hover {
+  animation-name: change-color;
+  animation-duration: 500ms;
+  animation-fill-mode: forwards;
+}
+
+ @keyframes change-color {
+  100% {
+    color: rgb(111,43,43);
+      border: 3px rgb(111,43,43) solid;
+  }
+}
+
+/*   Footer  */
+footer {
+  margin-top: 30px;
+  background-color: #ddd;
+  padding: 20px;
+}
+
+.footer-ul {
+    display: flex;
+    justify-content: flex-end;
+    color: #444;
+}
+
+
+span {
+    margin-top: 5px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 0.9em;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead of next to each other */
+@media screen and (max-width: 650px) {
+   /*   Navigation bar   */
+  header {
+    flex-wrap: wrap;
+    width:100%;
+  }
+
+.logo {
+    margin-top: 15px;
+    width: 100%;
+    position: relative;
+  }
+
+  #header-img {
+      margin: 0 auto;
+  }
+
+  nav li{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  ul {
+      flex-direction: column;
+  }
+
+  .container{
+      padding-top: 300px;
+  }
+
+  .small-box{
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .wand {
+    width: 80%;
+    max-width: 600px;
+    padding: 5px 5px 5px 5px;
+    margin: 20px 5px 20px 5px;
+}
+
+}
